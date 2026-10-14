@@ -9,6 +9,5 @@ plugins_install_dir = join_paths(get_option('libdir'), 'gstreamer-1.0')
 
 gst_dep = dependency('gstreamer-1.0', version : '>=1.0.0')
 gstbase_dep = dependency('gstreamer-base-1.0', version : '>=1.0.0')
-gstcontroller_dep = dependency('gstreamer-controller-1.0', version : '>=1.0.0')
 
 subdir('plugins')

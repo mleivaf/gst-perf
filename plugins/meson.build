@@ -14,10 +14,10 @@ endif
 
 configure_file(output : 'config.h', configuration : cdata)
 
-shared_library('gstperf',
+shared_module('gstperf',
   'gstperf.c',
   c_args : ['-DHAVE_CONFIG_H'],
-  dependencies : [gst_dep, gstbase_dep, gstcontroller_dep],
+  dependencies : [gst_dep, gstbase_dep],
   install : true,
   install_dir : plugins_install_dir,
 )
